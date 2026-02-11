@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="floating-heart">💕</div>
+        <div class="floating-heart">💖</div>
+        <div class="floating-heart">💗</div>
+        <div class="floating-heart">💝</div>
+        <div class="floating-heart">💓</div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h1 class="question">Will you be my Valentine?</h1>
+            <p class="subtitle">I think you're amazing ✨</p>
+            
+            <div class="buttons-container">
+                <button class="btn yes-btn" onclick="handleYes()">Yes! 🎉</button>
+                <button class="btn no-btn" id="noBtn" onmouseover="moveNoButton()" onclick="moveNoButton()">No 😢</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="celebration" class="celebration hidden">
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        
+        <div class="success-message">
+            <h2>Yay! 🎊</h2>
+            <p>You just made me the happiest person! 💕</p>
+            <button class="btn reset-btn" onclick="resetPage()">Ask Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
